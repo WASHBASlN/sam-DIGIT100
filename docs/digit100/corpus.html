@@ -2,27 +2,75 @@
 <html>
     <head>
         <title>sam/washbasln- about</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="../style.css" />
     </head>
     <body>
-     <div class="div2">   
-         <div class="div">
-            <p> 
-                <strong><a href="index.html">home</a></strong> | 
-                <strong><a href="gallery.html">gallery</a></strong> | 
-                <strong><a href="updates.html">updates</a></strong> | 
-                <strong><a href="reflection.html">reflection</a></strong> | 
-                <strong><a href="digit100/corpus.html">corpus analysis</a></strong>
-            </p>
+        <div class="div2">
+            <div class="div">
+                <p>
+                    <strong><a href="../index.html">home</a></strong> | <strong><a
+                            href="../gallery.html">gallery</a></strong> | <strong><a
+                            href="../updates.html">updates</a></strong> | <strong><a
+                            href="../reflection.html">reflection</a></strong> | <strong><a
+                            href="digit100/corpus.html">corpus analysis</a></strong>
+                </p>
+            </div>
+            <div class="div">
+                <h2>Corpus Analysis of the Warriors Superedition books by Erin Hunter.</h2>
+                <p class="size">The auther Erin Hunter is not actually a person, but rather several
+                    different people operating under the same pseudonym. I am curious to see if
+                    their writing styles vary or not. Of the 14 books I've collected for this
+                    analysis, all of them were either written by Kate Cary or Cherith Baldry. Dan
+                    Jolley was credited once, alongside Cherith Baldry for the writing of
+                    Bramblestar's Storm.</p>
+                <p class="size">Bluestar's Prophecy, Crookedstar's Promise, Leopardstar's Honor,
+                    Moth Flight's Vision, Squirrelflight's Hope, Tallstar's Revenge, and
+                    Tigherheart's Shadow were all written by Kate Cary.</p>
+                <p class="size">Bramblestar's Storm, Crowfeather's Trial, Firestar's Quest,
+                    Graystripe's Vow, Hawkwing's Journey, SkyClan's Destiny, and Yellowfang's Secret
+                    were written by Cherith Baldry.</p>
+                <p class="size">All of this information was available to me on the <a
+                        href="https://warriors.fandom.com/wiki/Warriors_Wiki" class="size">Warrior
+                        Cats Fandom Wiki</a> by simply searching for each book by name.</p>
+            </div>
+            <div class="div">
+                <p class="size">First thing, I went in and simply compared the texts at a very face
+                    value. I set the N-gram size to 5, because I feel like that's a good, solid
+                    number. Anything less that that was basically the same. Anything more would
+                    typically bring up lines of dialogue that are frequently repeated, so this is
+                    not an indication of the author's writing style.</p>
+                <figure>
+                    <img src="images/baldryngram5.png" alt="Screenshot of AntConc">
+                    <figcaption>N-gram 5 of the books by Baldry. A lot of these seem to be
+                        describing the location of the character we're reading about.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/caryngram5.png" alt="Screenshot of AntConc">
+                    <figcaption>N-gram 5 of the books by Cary. A lot of the same, except there are a
+                        few descriptions of character action as well as descriptions of a
+                        character's location.</figcaption>
+                </figure>
+            </div>
+            <div class="div">
+                <p class="size"> I took some of the more commonly occuring phrases and did the
+                    cluster search on them. Results below. </p>
+                <figure>
+                    <img src="images/baldryflicktail.png" alt="Screenshot of AntConc">
+                    <img src="images/caryflicktail.png" alt="Screenshot of AntConc">
+                    <figcaption>Cluster size of 8 of books by Baldry (top) and Cary (bottom). I just
+                        wanted to see how repetitive the writing was.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/baldrycluster10.png" alt="Screenshot of AntConc">
+                    <img src="images/carycluster10.png" alt="Screenshot of AntConc">
+                    <figcaption>Cluster size of 10 of books by Baldry (top) and Cary (bottom).
+                        Again, I just wanted to see how repetitive the writing was.</figcaption>
+                </figure>
+            </div>
+            <div class="div">
+                <p class="size">While there are some slight differences in their writing styles and word choices it seems, the writing is simple and repetitive enough that a reader likely would not notice the difference. On one had, this makes sense, because they'd probably like to uphold the Erin Hunter persona. But at the same time, there is the background knowledge and context that, historically, the Erins have not been too good at keeping track of the books. One character died 3 different times or something like that because they forgot they already killed him and brought him back.</p>
+                <p class="size">It was interesting to look at this. I probably would've gone more in-depth if this wasn't supposed to be a quick little assignment and also if AntConc stopped crashing every time I tried to do one little thing. I'm a bit interested to see how similar the writing is in main series books, since the Super Editions are kind of like side books. </p>
+            </div>
         </div>
-        <div class="div"> 
-            <p class="size-2">warrior cats superedition books analysis</p>
-            <p class="size-2"></p>
-        </div>
-        <div class="div">
-           <h2>Corpus Analysis of the Warriors Superedition books by Erin Hunter.</h2>
-           <p class="size">The auther Erin Hunter is not actually a person, but rather several different people operating under the same pseudonym. I am curious to see if their writing styles vary or not.</p>
-         </div>
-     </div>
     </body>
 </html>
